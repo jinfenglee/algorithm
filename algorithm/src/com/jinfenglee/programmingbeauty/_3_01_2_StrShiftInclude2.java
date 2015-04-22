@@ -2,8 +2,8 @@ package com.jinfenglee.programmingbeauty;
 
 
 /**
- * 3.1 Á½¸ö×Ö·û´®Ñ­»·°üº¬ÎÊÌâ.
- * ±È½Ï³£¹æµÄ·½·¨£¬Ê±¼ä¸´ÔÓ¶È±È½Ï´ó. 
+ * 3.1 ä¸¤ä¸ªå­—ç¬¦ä¸²å¾ªç¯åŒ…å«é—®é¢˜.
+ * æ¯”è¾ƒå¸¸è§„çš„æ–¹æ³•ï¼Œæ—¶é—´å¤æ‚åº¦æ¯”è¾ƒå¤§. 
  * @author LJF
  * @version 2014-05-07 14:57:38
  * 
@@ -16,11 +16,11 @@ public class _3_01_2_StrShiftInclude2 {
 	}
 
 	/**
-	 * s1 ÊÇ·ñÑ­»·°üº¬s2
+	 * s1 æ˜¯å¦å¾ªç¯åŒ…å«s2
 	 * 
 	 * @param s1
 	 * @param s2
-	 * @return boolean ÊÇ·ñ°üº¬
+	 * @return boolean æ˜¯å¦åŒ…å«
 	 */
 	private static boolean shiftContains(String s1, String s2) {
 		char[] str1 = s1.toCharArray();
@@ -43,7 +43,7 @@ public class _3_01_2_StrShiftInclude2 {
 	}
 
 	/**
-	 * str1[]ÊÇ·ñ°üº¬str2[]
+	 * str1[]æ˜¯å¦åŒ…å«str2[]
 	 * 
 	 * @param str1
 	 * @param str2
@@ -64,7 +64,7 @@ public class _3_01_2_StrShiftInclude2 {
 			}
 
 			for (; i < str1.length && j < str2.length; i++, j++) {
-				// ¸ÃÑ­»·µÃµ½µÄ×Ö·û´®str1²»°üº¬str2.
+				// è¯¥å¾ªç¯å¾—åˆ°çš„å­—ç¬¦ä¸²str1ä¸åŒ…å«str2.
 				if (str1[i] != str2[j]) {
 					break;
 				}

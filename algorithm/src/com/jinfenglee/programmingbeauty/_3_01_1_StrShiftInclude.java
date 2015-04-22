@@ -1,15 +1,15 @@
 package com.jinfenglee.programmingbeauty;
 
 /**
- * ÎÊÌâ£º¸ø¶¨Á½¸ö×Ö·û´®s1ºÍs2£¬ÒªÇóÅĞ¶Ïs2ÊÇ·ñÄÜ¹»Í¨¹ıs1×öÑ­»·ÒÆÎ»²Ù×÷µÃµ½µÄ×Ö·û´®°üº¬¡£
- * ÀıÈç£¬¸ø¶¨s1£½AABCDºÍs2=CDAA£¬·µ»Øtrue£»¸ø¶¨s1=ABCDºÍs2=ACBD£¬·µ»Øfalse¡£
+ * é—®é¢˜ï¼šç»™å®šä¸¤ä¸ªå­—ç¬¦ä¸²s1å’Œs2ï¼Œè¦æ±‚åˆ¤æ–­s2æ˜¯å¦èƒ½å¤Ÿé€šè¿‡s1åšå¾ªç¯ç§»ä½æ“ä½œå¾—åˆ°çš„å­—ç¬¦ä¸²åŒ…å«ã€‚
+ * ä¾‹å¦‚ï¼Œç»™å®šs1ï¼AABCDå’Œs2=CDAAï¼Œè¿”å›trueï¼›ç»™å®šs1=ABCDå’Œs2=ACBDï¼Œè¿”å›falseã€‚
  * 
  * @author LJF
  * @date 2014-03-26 14:23
  * 
  */
 
-// Ö±½ÓÏÂÃæµÄÕâ¸ö·½·¨¾Í¿ÉÒÔ
+// ç›´æ¥ä¸‹é¢çš„è¿™ä¸ªæ–¹æ³•å°±å¯ä»¥
 //	public static boolean containStr2(String s1, String s2) {
 //		s1 = s1.concat(s1);
 //		return s1.contains(s2);
@@ -27,13 +27,13 @@ public class _3_01_1_StrShiftInclude {
 	}
 
 	/**
-	 * ÓÃ¿Õ¼äÀ´»»Ê±¼ä,°Ñs1 copy Ò»±é×é³ÉĞÂ´®£¬¿´ĞÂ´®ÊÇ·ñ°üº¬s2
+	 * ç”¨ç©ºé—´æ¥æ¢æ—¶é—´,æŠŠs1 copy ä¸€éç»„æˆæ–°ä¸²ï¼Œçœ‹æ–°ä¸²æ˜¯å¦åŒ…å«s2
 	 * 
 	 * @param pattern
-	 * @return boolean ÊÇ·ñ°üº¬
+	 * @return boolean æ˜¯å¦åŒ…å«
 	 */
 	public int doMatch(String pattern) {
-		// ×Ö·û´®À©´óÒ»±¶Æ´´®£¬Èç¹û²»°üº¬pattern¾ÍËµÃ÷²»¹ÜÔõÃ´ÒÆÎ»¶¼²»°üº¬.
+		// å­—ç¬¦ä¸²æ‰©å¤§ä¸€å€æ‹¼ä¸²ï¼Œå¦‚æœä¸åŒ…å«patternå°±è¯´æ˜ä¸ç®¡æ€ä¹ˆç§»ä½éƒ½ä¸åŒ…å«.
 		String str = this.source + this.source;
 
 		if (str.contains(pattern)) {
