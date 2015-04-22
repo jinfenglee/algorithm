@@ -1,14 +1,14 @@
 package com.jinfenglee.programmingbeauty;
 
 /**
- * 2.8 ÇóÂú×ãÌõ¼şµÄÕûÊıM Ê¹µÃ M*N ÖĞÖ»º¬ÓĞ0ºÍ1
+ * 2.8 æ±‚æ»¡è¶³æ¡ä»¶çš„æ•´æ•°M ä½¿å¾— M*N ä¸­åªå«æœ‰0å’Œ1
  * 
- * »»¸ö½Ç¶ÈË¼¿¼£¬MÂú×ãÌõ¼şÊ±£¬³Ë»ıproductÒ²ÊÇµÚÒ»´ÎÂú×ãÌõ¼ş£¨Ö»º¬ÓĞ0,1£©. product % n == 0
- * ÒòÎªproduct±éÀúµÄ´ÎÊı±ÈMÉÙ£¬¿ÉÒÔ´ÓproductÈëÊÖ. 
- * ³Ë»ıproductµÄ¿ÉÄÜÈ¡ÖµÎª 1, 10, 11, 100, 101, 110, 111 ...[Ê®½øÖÆµÄ.] 
- * ÎÒÃÇ¿ÉÒÔ½«ÆäÓ³Éä³É¶ş½øÖÆÊı 1, 2£¬ 3£¬ 4£¬ 5£¬ 6£¬ 7 .....
+ * æ¢ä¸ªè§’åº¦æ€è€ƒï¼ŒMæ»¡è¶³æ¡ä»¶æ—¶ï¼Œä¹˜ç§¯productä¹Ÿæ˜¯ç¬¬ä¸€æ¬¡æ»¡è¶³æ¡ä»¶ï¼ˆåªå«æœ‰0,1ï¼‰. product % n == 0
+ * å› ä¸ºproductéå†çš„æ¬¡æ•°æ¯”Må°‘ï¼Œå¯ä»¥ä»productå…¥æ‰‹. 
+ * ä¹˜ç§¯productçš„å¯èƒ½å–å€¼ä¸º 1, 10, 11, 100, 101, 110, 111 ...[åè¿›åˆ¶çš„.] 
+ * æˆ‘ä»¬å¯ä»¥å°†å…¶æ˜ å°„æˆäºŒè¿›åˆ¶æ•° 1, 2ï¼Œ 3ï¼Œ 4ï¼Œ 5ï¼Œ 6ï¼Œ 7 .....
  * 
- * È»ºó±éÀú£¬µ±product%N == 0Ê±£¬product¾ÍÊÇÎÒÃÇĞèÒªµÄ×îĞ¡³Ë»ı£¬ procude/ N ¾ÍÊÇÎÒÃÇĞèÒªµÄMÖµ¡£
+ * ç„¶åéå†ï¼Œå½“product%N == 0æ—¶ï¼Œproductå°±æ˜¯æˆ‘ä»¬éœ€è¦çš„æœ€å°ä¹˜ç§¯ï¼Œ procude/ N å°±æ˜¯æˆ‘ä»¬éœ€è¦çš„Må€¼ã€‚
  * 
  * @author LJF
  * @date 2014-06-30 20:23:06
@@ -16,7 +16,7 @@ package com.jinfenglee.programmingbeauty;
  */
 public class _2_08_02_FindNumOnlyZeroOne {
 	public static void main(String[] args) {
-		// 126¿ÉÄÜ¾ÍÊÇÌØÊâÇé¿ö£¬ÓëÈÎºÎÖµÏà³Ë¶¼²»¿ÉÄÜµÃµ½Ò»¸ö0ºÍ1×é³ÉµÄ³Ë»ı.
+		// 126å¯èƒ½å°±æ˜¯ç‰¹æ®Šæƒ…å†µï¼Œä¸ä»»ä½•å€¼ç›¸ä¹˜éƒ½ä¸å¯èƒ½å¾—åˆ°ä¸€ä¸ª0å’Œ1ç»„æˆçš„ä¹˜ç§¯.
 		// int n = 126;   
 		
         int n =136;
@@ -24,22 +24,22 @@ public class _2_08_02_FindNumOnlyZeroOne {
 			int decimal = decimalFromMappedBinary(i);
 
 			if (decimal % n == 0) {
-				System.out.print("MµÄÖµ£º" + decimal / n + " ,³Ë»ıÎª:" + decimal);
+				System.out.print("Mçš„å€¼ï¼š" + decimal / n + " ,ä¹˜ç§¯ä¸º:" + decimal);
 				break;
 			}
 		}
 	}
 
 	/**
-	 * ´Ó¶ş½øÖÆÖĞÓ³Éä³öµÄÊ®½øÖÆ
+	 * ä»äºŒè¿›åˆ¶ä¸­æ˜ å°„å‡ºçš„åè¿›åˆ¶
 	 * 
-	 * @param result Îª³Ë»ıµÄ½á¹û£¨Ö»°üº¬0ºÍ1£©
+	 * @param result ä¸ºä¹˜ç§¯çš„ç»“æœï¼ˆåªåŒ…å«0å’Œ1ï¼‰
 	 * @return
 	 */
 	private static int decimalFromMappedBinary(int i) {
 		// String s= String.valueOf(result);
-		String k = Integer.toBinaryString(i); // ¶ş½øÖÆĞÎÊ½
-		int result = Integer.valueOf(k);      // "10101"--> Ê®½øÖÆµÄ 10101
+		String k = Integer.toBinaryString(i); // äºŒè¿›åˆ¶å½¢å¼
+		int result = Integer.valueOf(k);      // "10101"--> åè¿›åˆ¶çš„ 10101
 		
 		return result;
 	}
