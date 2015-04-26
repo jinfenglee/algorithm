@@ -1,7 +1,7 @@
 package com.jinfenglee.leetcode.array;
 
 /**
- * ºÏ²¢Á½¸öÓĞĞòÊı×é£¬²¢ÅÅĞòĞÂÊı×é
+ * åˆå¹¶ä¸¤ä¸ªæœ‰åºæ•°ç»„ï¼Œå¹¶æ’åºæ–°æ•°ç»„
  * 
  * @author LJF
  * @date 2014-11-22 22:58:23
@@ -16,9 +16,9 @@ public class MergeSortedArray {
 	/**
 	 * merge two sorted array  result elements put in Array A.
 	 * @param A
-	 * @param m AÊı×éµÄ³¤¶È
+	 * @param m Aæ•°ç»„çš„é•¿åº¦
 	 * @param B
-	 * @param n BÊı×éµÄ³¤¶È
+	 * @param n Bæ•°ç»„çš„é•¿åº¦
 	 */
 	public static void merge(int A[], int m, int B[], int n) {
 //		A = new int[m + n];

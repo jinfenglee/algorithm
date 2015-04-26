@@ -1,14 +1,14 @@
 package com.jinfenglee.programmingbeauty;
 
 /**
- * 2.3 Ñ°ÕÒ·¢Ìû¡°Ë®Íõ¡± £¬¡°Ë®Íõ¡±·¢µÄÌû×ÓÊýÄ¿³¬¹ýÌû×Ó×ÜÊýµÄÒ»°ë£¬ÈçºÎ°Ñ¡°Ë®Íõ¡±ÕÒ³öÀ´.
+ * 2.3 å¯»æ‰¾å‘å¸–â€œæ°´çŽ‹â€ ï¼Œâ€œæ°´çŽ‹â€å‘çš„å¸–å­æ•°ç›®è¶…è¿‡å¸–å­æ€»æ•°çš„ä¸€åŠï¼Œå¦‚ä½•æŠŠâ€œæ°´çŽ‹â€æ‰¾å‡ºæ¥.
  * 
  * <p>
- * ´óÖÂË¼Â·£º¼ÙÉèÃ¿¸öID¶¼ÓÐ¿ÉÄÜÊÇË®Íõ£¬ÄÇÃ´ÔÚ±éÀúÊ±Õâ¸öË®Íõ¾ÍÒªÓöµ½Ò»ÖÖÌôÕ½£¬¿ÉÄÜ×Ô¼ºµÄÌû×ÓÊýÊÇ»áÔö¼ÓµÄ£¬
- * Ò²¿ÉÄÜÊÇÓöµ½ÌôÕ½µÄ£¬Ìû×ÓÊýÒª¼õÉÙµÄ¡£ÕâÑù±éÀúÏÂÀ´£¬Ö»ÓÐË®ÍõµÄÌû×ÓÔö¼ÓµÄ¼õÈ¥Óöµ½ÌôÕ½µÄÌû×ÓÊý»áÊÇ´óÓÚ0µÄ¡£
- * ÆäËûÈÎºÎÌû×Ó¼ÙÉèÎªË®ÍõÊ±¶¼ÊÇ½û²»ÆðÌôÕ½µÄ¡£  Ê±¼ä¸´ÔÓ¶ÈÎªO(n),·Ç³£ºÃ.
+ * å¤§è‡´æ€è·¯ï¼šå‡è®¾æ¯ä¸ªIDéƒ½æœ‰å¯èƒ½æ˜¯æ°´çŽ‹ï¼Œé‚£ä¹ˆåœ¨éåŽ†æ—¶è¿™ä¸ªæ°´çŽ‹å°±è¦é‡åˆ°ä¸€ç§æŒ‘æˆ˜ï¼Œå¯èƒ½è‡ªå·±çš„å¸–å­æ•°æ˜¯ä¼šå¢žåŠ çš„ï¼Œ
+ * ä¹Ÿå¯èƒ½æ˜¯é‡åˆ°æŒ‘æˆ˜çš„ï¼Œå¸–å­æ•°è¦å‡å°‘çš„ã€‚è¿™æ ·éåŽ†ä¸‹æ¥ï¼Œåªæœ‰æ°´çŽ‹çš„å¸–å­å¢žåŠ çš„å‡åŽ»é‡åˆ°æŒ‘æˆ˜çš„å¸–å­æ•°ä¼šæ˜¯å¤§äºŽ0çš„ã€‚
+ * å…¶ä»–ä»»ä½•å¸–å­å‡è®¾ä¸ºæ°´çŽ‹æ—¶éƒ½æ˜¯ç¦ä¸èµ·æŒ‘æˆ˜çš„ã€‚  æ—¶é—´å¤æ‚åº¦ä¸ºO(n),éžå¸¸å¥½.
  * 
- * Ïà·´£¬Èç¹ûÏÈÅÅÐò£¬È»ºóÍ³¼ÆÃ¿¸öÊý³öÏÖµÄ´ÎÊý£¬¾ÍÌ«Éµ¹ÏÁË£¬¸´ÔÓ¶ÈÎªO(N + N*log2N)¡£
+ * ç›¸åï¼Œå¦‚æžœå…ˆæŽ’åºï¼Œç„¶åŽç»Ÿè®¡æ¯ä¸ªæ•°å‡ºçŽ°çš„æ¬¡æ•°ï¼Œå°±å¤ªå‚»ç“œäº†ï¼Œå¤æ‚åº¦ä¸ºO(N + N*log2N)ã€‚
  * @author Administrator
  * 
  */
@@ -23,17 +23,17 @@ public class _2_03_PostingMost {
 	}
 
 	/**
-	 * ¸Ã½â·¨µÄ²ßÂÔ¾ÍÏñÊÇ¶ÔÕ½Ò»Ñù£¬¾ÍÊÇ¼ÓÈëÄãºÜÅ££¬Äã¾ÍÒª¾­µÃÆðÆäËûÈËµÄÌôÕ½£¬
-	 * Èç¹û²»ÐÐ£¬¾ÍÒªÍË³ö£¬»»ÏÂÒ»¸ö£¬Ö±µ½×îºóµÄÊ¤Õß¡£
+	 * è¯¥è§£æ³•çš„ç­–ç•¥å°±åƒæ˜¯å¯¹æˆ˜ä¸€æ ·ï¼Œå°±æ˜¯åŠ å…¥ä½ å¾ˆç‰›ï¼Œä½ å°±è¦ç»å¾—èµ·å…¶ä»–äººçš„æŒ‘æˆ˜ï¼Œ
+	 * å¦‚æžœä¸è¡Œï¼Œå°±è¦é€€å‡ºï¼Œæ¢ä¸‹ä¸€ä¸ªï¼Œç›´åˆ°æœ€åŽçš„èƒœè€…ã€‚
 	 * @param array
 	 * @return
 	 */
 	private static int findPostingMost(int[] array) {
 		int result = 0;
-		int times = 0;// ³öÏÖµÄ´ÎÊý
+		int times = 0;// å‡ºçŽ°çš„æ¬¡æ•°
 		
 		for (int i = 0; i < array.length; i++) {
-			// Èç¹û´ÎÊýµÈÓÚ0,ÖØÐÂÖ¸¶¨½á¹û
+			// å¦‚æžœæ¬¡æ•°ç­‰äºŽ0,é‡æ–°æŒ‡å®šç»“æžœ
 			if (times == 0) {
 				result = array[i];
 				times = 1;
@@ -50,11 +50,11 @@ public class _2_03_PostingMost {
 		return result;
 	}
 	/**
-	 * ÍØÕ¹ÎÊÌâ£ºËæ×ÅTangoµÄ·¢Õ¹£¬¹ÜÀíÔ±·¢ÏÖ£¬¡°³¬¼¶Ë®Íõ¡±Ã»ÓÐÁË¡£Í³¼Æ½á¹û±íÃ÷£¬
-	 * ÓÐ3¸ö·¢ÌûºÜ¶àµÄIDËûÃÇµÄ·¢ÌûÊýÄ¿¶¼³¬¹ýÁËÌû×Ó×ÜÊýÄ¿NµÄ1/4¡£ÄãÄÜ´Ó·¢ÌûIDÁÐ±íÖÐ¿ìËÙÕÒ³öËûÃÇµÄIDÂð£¿
-	 * Õâ¸öÀ©Õ¹ÎÊÌâ»¹ÊÇÉÏÌâËùÊöµÄ¡±¶ÔÊÖ¡±ÎÊÌâ£¬²»¹ýÕâ´ÎÊÇÈý¸öIDÍ¬Ê±Ó¦Õ½£¬µ«ÊÇÕâÈý¸öIDÖ®¼ä²¢²»¶ÔÕ½¡£
-	 * ËùÒÔÎÊÌâºÜ¿ìµÃµ½½â¾ö¡£
-	 * ÓëÉÏÃæµÄÎÊÌâ·Ç³£ÏàËÆ.
+	 * æ‹“å±•é—®é¢˜ï¼šéšç€Tangoçš„å‘å±•ï¼Œç®¡ç†å‘˜å‘çŽ°ï¼Œâ€œè¶…çº§æ°´çŽ‹â€æ²¡æœ‰äº†ã€‚ç»Ÿè®¡ç»“æžœè¡¨æ˜Žï¼Œ
+	 * æœ‰3ä¸ªå‘å¸–å¾ˆå¤šçš„IDä»–ä»¬çš„å‘å¸–æ•°ç›®éƒ½è¶…è¿‡äº†å¸–å­æ€»æ•°ç›®Nçš„1/4ã€‚ä½ èƒ½ä»Žå‘å¸–IDåˆ—è¡¨ä¸­å¿«é€Ÿæ‰¾å‡ºä»–ä»¬çš„IDå—ï¼Ÿ
+	 * è¿™ä¸ªæ‰©å±•é—®é¢˜è¿˜æ˜¯ä¸Šé¢˜æ‰€è¿°çš„â€å¯¹æ‰‹â€é—®é¢˜ï¼Œä¸è¿‡è¿™æ¬¡æ˜¯ä¸‰ä¸ªIDåŒæ—¶åº”æˆ˜ï¼Œä½†æ˜¯è¿™ä¸‰ä¸ªIDä¹‹é—´å¹¶ä¸å¯¹æˆ˜ã€‚
+	 * æ‰€ä»¥é—®é¢˜å¾ˆå¿«å¾—åˆ°è§£å†³ã€‚
+	 * ä¸Žä¸Šé¢çš„é—®é¢˜éžå¸¸ç›¸ä¼¼.
 	 * @param array
 	 */
 	private static void findPostingMostThree(int[] array) {
@@ -83,7 +83,7 @@ public class _2_03_PostingMost {
 				times[2]--;
 			}
 		}
-		System.out.println("·¢Ìû×î¶àµÄÈý¸öÈËµÄ idÊÇ:");
+		System.out.println("å‘å¸–æœ€å¤šçš„ä¸‰ä¸ªäººçš„ idæ˜¯:");
 		for (int i = 0; i < result.length; i++) {
 			System.out.print(result[i] + " ");
 		}

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * ÇóÒ»¸öÃ»ÓĞÖØ¸´ÔªËØ¼¯ºÏµÄËùÓĞ×Ó¼¯
+ * æ±‚ä¸€ä¸ªæ²¡æœ‰é‡å¤å…ƒç´ é›†åˆçš„æ‰€æœ‰å­é›†
  * 
  * @author LJF
  * @date 2014-11-06 21:04:20
@@ -20,13 +20,13 @@ public class Subsets {
 	public static List<List<Integer>> subsets(int[] S) {
 		ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
 		List<Integer> r = new ArrayList<Integer>();
-		result.add(r); // ×Ó¼¯ÖĞÓĞÒ»¸öÊÇ{}
+		result.add(r); // å­é›†ä¸­æœ‰ä¸€ä¸ªæ˜¯{}
 		if (S == null || S.length == 0) {
 			return result;
 		}
 		Arrays.sort(S);
 
-		int[] position = new int[S.length + 1]; // ×÷ÎªÊı×éS µÄÏÂ±ê
+		int[] position = new int[S.length + 1]; // ä½œä¸ºæ•°ç»„S çš„ä¸‹æ ‡
 
 		for (int len = 1; len <= S.length; len++) {
 			Arrays.fill(position, -1);

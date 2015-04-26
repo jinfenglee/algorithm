@@ -1,7 +1,7 @@
 package com.jinfenglee.leetcode.array;
 
 /**
- * ¶ÔÒ»¸öÕûÊı½øĞĞ·´×ª  Èç£º 123-->321   0-->0   -123 --> -321
+ * å¯¹ä¸€ä¸ªæ•´æ•°è¿›è¡Œåè½¬  å¦‚ï¼š 123-->321   0-->0   -123 --> -321
  * 
  * @author LJF
  * @date 2014-10-25 20:17:46
@@ -15,8 +15,8 @@ public class ReverseInteger {
 	}
 	
 	/**
-	 * ·´×ªÒ»¸öÕûÊı
-	 * @param x ´ı·´×ªµÄÕûÊı
+	 * åè½¬ä¸€ä¸ªæ•´æ•°
+	 * @param x å¾…åè½¬çš„æ•´æ•°
 	 * @return
 	 */
 	private static int reverse(int x) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 /**
- * ÇóÒ»¸ö¼¯ºÏµÄ×Ó¼¯(¼¯ºÏÖĞ¿ÉÒÔ°üº¬ÖØ¸´ÔªËØ)
+ * æ±‚ä¸€ä¸ªé›†åˆçš„å­é›†(é›†åˆä¸­å¯ä»¥åŒ…å«é‡å¤å…ƒç´ )
  * @author LJF
  * @date 2014-11-06 
  */
@@ -17,7 +17,7 @@ public class SubsetsII {
 	public static List<List<Integer>> subsets(int[] num) {
 		ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
 		List<Integer> r = new ArrayList<Integer>();
-		result.add(r);   // ×Ó¼¯ÖĞÓĞÒ»¸öÊÇ{}
+		result.add(r);   // å­é›†ä¸­æœ‰ä¸€ä¸ªæ˜¯{}
 		if (num == null || num.length == 0) {
 			return result;
 		}

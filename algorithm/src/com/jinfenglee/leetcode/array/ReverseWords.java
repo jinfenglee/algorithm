@@ -1,7 +1,7 @@
 package com.jinfenglee.leetcode.array;
 
 /**
- * ·´×ª×Ö·û´®ÖÐµÄÓ¢ÎÄµ¥´Ê "how are you" --> "you are how"
+ * åè½¬å­—ç¬¦ä¸²ä¸­çš„è‹±æ–‡å•è¯ "how are you" --> "you are how"
  * 
  * @author LJF
  * @date 2014-10-27 22:08:30

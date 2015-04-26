@@ -1,7 +1,7 @@
 package com.jinfenglee.programmingbeauty;
 
 /**
- * ¸ø¶¨Ò»¸öÊ®½øÖÆÕýÕûÊýN£¬Ð´ÏÂ´Ó1¿ªÊ¼£¬µ½NµÄËùÓÐÕýÕûÊý£¬¼ÆËãÆäÖÐ³öÏÖµÄËùÓÐ¡°1¡±µÄ¸öÊý.
+ * ç»™å®šä¸€ä¸ªåè¿›åˆ¶æ­£æ•´æ•°Nï¼Œå†™ä¸‹ä»Ž1å¼€å§‹ï¼Œåˆ°Nçš„æ‰€æœ‰æ­£æ•´æ•°ï¼Œè®¡ç®—å…¶ä¸­å‡ºçŽ°çš„æ‰€æœ‰â€œ1â€çš„ä¸ªæ•°.
  * 
  * @author Administrator
  * @Date 2014-06-16
@@ -12,13 +12,13 @@ public class _2_04_NumOfOne {
 		long n1 = 12L;
 		System.out.println(totalNumOne(n1));  // 5
 		System.out.println(totalNumOne(1111111110L));
-		System.out.println(totalNumOne(1111121110L)); //11111 73999 ËùÒÔ¸ÃnÒ²ÊÇÐ¡ÓÚ 11111 21110L
+		System.out.println(totalNumOne(1111121110L)); //11111 73999 æ‰€ä»¥è¯¥nä¹Ÿæ˜¯å°äºŽ 11111 21110L
 //		System.out.println(totalNumOne(999999999L));      // 99999 9999 --> 90000 0000
 //		System.out.println(totalNumOne(9999999999L));   // 99999 99999 --> 10000 00000 0
 //		System.out.println(totalNumOne(99999999999L));   // 99999 99999 9---> 11000 00000 00
 		
-		// ¿ÉÒÔ¿´³öËùÒªÇóµÄnÖµÒ»¶¨ÊÇ´óÓÚ9 ¸ö9¶øÇÒÐ¡ÓÚ10¸ö9.
-		// ÎªÁËÇó³öÂú×ãÌõ¼þµÄ×î´óµÄn£¬ËùÒÔforÑ­»·ÊÇ´ÓºóÏòÇ°£¬ÕÒ³öµÚÒ»¸öÂú×ãÌõ¼þµÄ¾Íbreak;
+		// å¯ä»¥çœ‹å‡ºæ‰€è¦æ±‚çš„nå€¼ä¸€å®šæ˜¯å¤§äºŽ9 ä¸ª9è€Œä¸”å°äºŽ10ä¸ª9.
+		// ä¸ºäº†æ±‚å‡ºæ»¡è¶³æ¡ä»¶çš„æœ€å¤§çš„nï¼Œæ‰€ä»¥forå¾ªçŽ¯æ˜¯ä»ŽåŽå‘å‰ï¼Œæ‰¾å‡ºç¬¬ä¸€ä¸ªæ»¡è¶³æ¡ä»¶çš„å°±break;
 //		long n = 9999999999L;
 		long n = 1111121110L;
 		System.out.println("-----------------------------");
@@ -31,12 +31,12 @@ public class _2_04_NumOfOne {
 			}
 		}
 		
-		// Âú×ãÌõ¼þµÄ×î´óÖµÊÇ 1 111 111 110
+		// æ»¡è¶³æ¡ä»¶çš„æœ€å¤§å€¼æ˜¯ 1 111 111 110
 		//35200001
 	}
 
 	/**
-	 * Çó1µ½NµÄÊýÖÐËùÓÐ1µÄ¸öÊý.
+	 * æ±‚1åˆ°Nçš„æ•°ä¸­æ‰€æœ‰1çš„ä¸ªæ•°.
 	 * 
 	 * @param n
 	 * @return

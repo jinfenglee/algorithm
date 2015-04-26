@@ -1,7 +1,7 @@
 package com.jinfenglee.leetcode.array;
 
 /**
- * ÇóÁ¬Ğø×ÓÊı×éµÄ×î´ó³Ë»ı.
+ * æ±‚è¿ç»­å­æ•°ç»„çš„æœ€å¤§ä¹˜ç§¯.
  * 
  * @author LJF
  * @date 2014-11-13 21:23:15

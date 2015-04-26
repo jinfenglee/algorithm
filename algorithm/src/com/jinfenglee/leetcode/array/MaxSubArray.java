@@ -1,7 +1,7 @@
 package com.jinfenglee.leetcode.array;
 
 /**
- * 数组的最大子数组(连续)
+ * 鏁扮粍鐨勬渶澶у瓙鏁扮粍(杩炵画)
  * 
  * @author LJF
  * @date:2015-01-26 08:33:42
@@ -15,7 +15,7 @@ public class MaxSubArray {
 		System.out.println(maxSubArray2(a));
 	}
 	/**
-	 * 两个for(), 效率很低
+	 * 涓や釜for(), 鏁堢巼寰堜綆
 	 * @param A
 	 * @return
 	 */

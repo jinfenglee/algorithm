@@ -5,7 +5,7 @@ package com.jinfenglee.leetcode.array;
  * appear only once and return the new length. <br>
  * Do not allocate extra space for another array,<br>
  * you must do this in place with constant memory.
- * ÒÆ³ıÒÑÅÅĞòµÄÊı×éÖĞÖØ¸´µÄÔªËØ£¬Ê¹ÆäÖ»±£ÁôÒ»¸ö.
+ * ç§»é™¤å·²æ’åºçš„æ•°ç»„ä¸­é‡å¤çš„å…ƒç´ ï¼Œä½¿å…¶åªä¿ç•™ä¸€ä¸ª.
  * 
  * @author LJF
  * @date 2014-11-09 18:15:17

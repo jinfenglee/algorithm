@@ -3,8 +3,8 @@ package com.jinfenglee.programmingbeauty;
 import java.util.Arrays;
 
 /**
- * Ê¹ÓÃ·ÖÖÎ·¨½øĞĞÑ°ÕÒ×î½üµÄµã¶Ô
- * Ë¼Â·À´×ÔÓÚ£ºhttp://www.cnblogs.com/kkgreen/archive/2011/06/12/2078668.html
+ * ä½¿ç”¨åˆ†æ²»æ³•è¿›è¡Œå¯»æ‰¾æœ€è¿‘çš„ç‚¹å¯¹
+ * æ€è·¯æ¥è‡ªäºï¼šhttp://www.cnblogs.com/kkgreen/archive/2011/06/12/2078668.html
  * @author LJF
  *
  */
@@ -24,50 +24,50 @@ public class _2_11_MinPointPair_2 {
 	        Points[9] = new Point(3, 6);
 	        //Points[10] = new Point(3,41);
 
-	        Arrays.sort(Points);//°´ÕÕx×ø±êÉıĞò¶ÔµãÔ¤ÅÅĞò,n*log(n)µÄ¸´ÔÓ¶È
+	        Arrays.sort(Points);//æŒ‰ç…§xåæ ‡å‡åºå¯¹ç‚¹é¢„æ’åº,n*log(n)çš„å¤æ‚åº¦
 	        
 	        Point[] result = new Point[2];
 	        result = getNearestPoints(Points);
-	        System.out.println("Êä³ö¾àÀë×î½üµÄÁ½¸öµãÊÇ£º ");
+	        System.out.println("è¾“å‡ºè·ç¦»æœ€è¿‘çš„ä¸¤ä¸ªç‚¹æ˜¯ï¼š ");
 	        //System.out.println(result[0].x);
 	        for (int i = 0; i < result.length; i++)
 	            System.out.print("(" + result[i].x + "," + result[i].y + ")   ");
 	}
 	
 	public static Point[] getNearestPoints(Point[] Points) {
-        //´ÓÒ»¸öµãÊı×éÀïÃæÕÒµ½×î½üµÄÁ½¸öµã£¬²¢·µ»ØÕâÁ½¸öµã
+        //ä»ä¸€ä¸ªç‚¹æ•°ç»„é‡Œé¢æ‰¾åˆ°æœ€è¿‘çš„ä¸¤ä¸ªç‚¹ï¼Œå¹¶è¿”å›è¿™ä¸¤ä¸ªç‚¹
         Point[] result = new Point[2];
-        if (Points.length == 3 || Points.length == 2) //µİ¹é½áÊøµÄÌõ¼ş
+        if (Points.length == 3 || Points.length == 2) //é€’å½’ç»“æŸçš„æ¡ä»¶
             result = getNear(Points);
-        else //¶àÓÚ3¸öµã£¬·ÖÖÎ£¬·Ö±ğÕÒ³öÁ½¸ö×Ó¼¯ºÏµÄ×î½üµã¶Ô£¬È»ºóºÏ²¢½á¹û
+        else //å¤šäº3ä¸ªç‚¹ï¼Œåˆ†æ²»ï¼Œåˆ†åˆ«æ‰¾å‡ºä¸¤ä¸ªå­é›†åˆçš„æœ€è¿‘ç‚¹å¯¹ï¼Œç„¶ååˆå¹¶ç»“æœ
         {
-            Point[] left = Arrays.copyOfRange(Points, 0, Points.length / 2);// ×îºóÒ»¸öÏÂ±ê²»°üÀ¨
+            Point[] left = Arrays.copyOfRange(Points, 0, Points.length / 2);// æœ€åä¸€ä¸ªä¸‹æ ‡ä¸åŒ…æ‹¬
             Point[] right = Arrays.copyOfRange(Points, Points.length / 2, Points.length);
             
-            //µÃµ½2¸ö×Ó¼¯ÀïÃæ·Ö±ğ×î¶Ì¾àÀëµÄ2¸öµã
+            //å¾—åˆ°2ä¸ªå­é›†é‡Œé¢åˆ†åˆ«æœ€çŸ­è·ç¦»çš„2ä¸ªç‚¹
             Point[] result1 = getNearestPoints(left);
             Point[] result2 = getNearestPoints(right);
 
             double d1 = dPoints(result1[0], result1[1]);
             double d2 = dPoints(result2[0], result2[1]);
 
-            //ÍüÁË½«result¸³Öµ
+            //å¿˜äº†å°†resultèµ‹å€¼
             if (d1 <= d2)
                 result = result1;
             else
                 result = result2;
             
-            //ºÏ²¢½á¹û£ºÕÒµ½È«¾Ö¾àÀë×î¶ÌµÄÁ½¸öµã 
+            //åˆå¹¶ç»“æœï¼šæ‰¾åˆ°å…¨å±€è·ç¦»æœ€çŸ­çš„ä¸¤ä¸ªç‚¹ 
             double dmin = Math.min(d1, d2);
 
-            int x1 = left.length - 1;//Á½¸öxµÄ·Ö½çµã
+            int x1 = left.length - 1;//ä¸¤ä¸ªxçš„åˆ†ç•Œç‚¹
             int x2 = x1 + 1;
-            //ÔÚPoints.length/2ÊÇÒ»¸öÕûÊıÊ±ÊÇ´íÎóµÄ
-            //int x1 = Points[Points.length/2 - 1].x;//Á½¸öxµÄ·Ö½çµã
+            //åœ¨Points.length/2æ˜¯ä¸€ä¸ªæ•´æ•°æ—¶æ˜¯é”™è¯¯çš„
+            //int x1 = Points[Points.length/2 - 1].x;//ä¸¤ä¸ªxçš„åˆ†ç•Œç‚¹
             //int x2 = Points[Points.length/2].x;
 
             for (int i = x1; i >= 0; i--) {
-                //if(x2 - Points[i].x > dmin)        //Ö±½Óµ¼ÖÂµ÷ÊÔºÜ¾Ã¶¼²»ÖªµÀ´íÔÚÄÄ£¡
+                //if(x2 - Points[i].x > dmin)        //ç›´æ¥å¯¼è‡´è°ƒè¯•å¾ˆä¹…éƒ½ä¸çŸ¥é“é”™åœ¨å“ªï¼
                 if (Points[x2].x - Points[i].x > dmin)
                     break;
                 else {
@@ -95,10 +95,10 @@ public class _2_11_MinPointPair_2 {
     }
 	
 	/**
-	 * ·µ»Ø½öÓĞ2¸öµã»òÕßÈı¸öµãµÄµãÊı×éÖĞ¾àÀë×îĞ¡µÄÁ½¸öµã
-	 * Á½¸öµã¾ÍÖ±½Ó·µ»Ø£¬Èı¸öµã¾Í¼ÆËãÃ¿Á½¸öµãÖ®¼ÒµÄ¾àÀë£¬È»ºó·µ»Ø¾àÀë×îĞ¡µÄÁ½¸öµã.
+	 * è¿”å›ä»…æœ‰2ä¸ªç‚¹æˆ–è€…ä¸‰ä¸ªç‚¹çš„ç‚¹æ•°ç»„ä¸­è·ç¦»æœ€å°çš„ä¸¤ä¸ªç‚¹
+	 * ä¸¤ä¸ªç‚¹å°±ç›´æ¥è¿”å›ï¼Œä¸‰ä¸ªç‚¹å°±è®¡ç®—æ¯ä¸¤ä¸ªç‚¹ä¹‹å®¶çš„è·ç¦»ï¼Œç„¶åè¿”å›è·ç¦»æœ€å°çš„ä¸¤ä¸ªç‚¹.
 	 * 
-	 * @param Points 2»ò3¸öµã
+	 * @param Points 2æˆ–3ä¸ªç‚¹
 	 * @return
 	 */
     private static Point[] getNear(Point[] Points) {
@@ -125,7 +125,7 @@ public class _2_11_MinPointPair_2 {
     }
 
 	/**
-	 * ×ø±êÖáÉÏÁ½¸öµã¶ÔÖ®¼äµÄ¾àÀë
+	 * åæ ‡è½´ä¸Šä¸¤ä¸ªç‚¹å¯¹ä¹‹é—´çš„è·ç¦»
 	 * 
 	 * @param a
 	 * @param b
@@ -137,7 +137,7 @@ public class _2_11_MinPointPair_2 {
 }
 
 @SuppressWarnings("rawtypes")
-class Point implements Comparable { //¶şÎ¬Êı×éµÄµã
+class Point implements Comparable { //äºŒç»´æ•°ç»„çš„ç‚¹
     public int x;
     public int y;
 
