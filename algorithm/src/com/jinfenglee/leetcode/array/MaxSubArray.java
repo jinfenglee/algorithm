@@ -37,7 +37,7 @@ public class MaxSubArray {
 	 * @param A
 	 * @return
 	 */
-	public static int maxSubArray2(int[] A) {
+	private static int maxSubArray2(int[] A) {
 		int maxSum = Integer.MIN_VALUE;
 		int sum = Integer.MIN_VALUE;
 
@@ -49,4 +49,27 @@ public class MaxSubArray {
 		}
 		return maxSum;
 	}
+	
+	/**
+	 * 与上面的那个解题思路是类似的.
+	 * @param a
+	 * @return
+	 */
+	private static int maxSubArraySum(int[] a) {
+
+		int maxSum = a[0];
+		int temp = 0;
+
+		for (int i = 0; i < a.length; ++i) {
+			temp += a[i]; 
+			if (temp > maxSum) {
+				maxSum = temp; 
+			} 
+			if (temp < 0) {// 累加小于0,重新赋值为0
+				temp = 0; 
+			}
+		}
+		return maxSum;
+	}
+	
 }
