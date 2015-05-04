@@ -15,7 +15,7 @@ package com.jinfenglee.basic;
 public class DivideNumArray {
 	
 	/**
-	 * 重排数组，分开正负数，并使元素相对位置保持不变.
+	 * 重排数组，分开正负数，并使元素相对位置保持不变.  （同理，分开奇偶数，相对位置不变，也是同样类型）
 	 * @param a
 	 * @param size
 	 */
@@ -25,11 +25,18 @@ public class DivideNumArray {
 		int temp = 0;
 		for (int i = 0; i < size; i++) {
 			if (nagitive == -1) {
-				if (a[i] < 0 && positive >= 0) {
-					nagitive = i; // 用来寻找第一个负数
+//				if (a[i] < 0 && positive >= 0) {
+//					nagitive = i; // 用来寻找第一个负数
+//				}
+//				if (a[i] > 0 && positive < 0) {
+//					positive = i; // 用来寻找第一个正数
+//				}
+				
+				if (a[i]%2 != 0 && positive >= 0) {
+					nagitive = i; // 用来寻找第一个奇数
 				}
-				if (a[i] > 0 && positive < 0) {
-					positive = i; // 用来寻找第一个正数
+				if (a[i] % 2 == 0 && positive < 0) {
+					positive = i; // 用来寻找第一个偶数
 				}
 			}
 			
