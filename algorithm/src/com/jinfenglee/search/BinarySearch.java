@@ -20,7 +20,7 @@ public class BinarySearch {
 		int high = arr.length - 1;
 
 		while (low <= high) {
-			// 还有写法：middle = low + ((high - low) >> 1), 效果实际一样的.
+			// 网上有的写法是这样的：middle = low + ((high - low) >> 1), 效果实际一样的.
 			int mid = (low + high) / 2;
 			if (num > arr[mid]) {
 				low = mid + 1;
@@ -35,7 +35,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		int[] arr = { 2, 5, 11, 3, 91, 13, 35, 4 };
-		// 二分查找要求，数组必须有序，先排序
+		// 二分查找要求数组有序，先排序
 		Arrays.sort(arr);
 		for (int a : arr) {
 			System.out.print(a+" ");
