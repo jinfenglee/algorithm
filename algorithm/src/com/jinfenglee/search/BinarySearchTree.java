@@ -41,7 +41,7 @@ public class BinarySearchTree {
 		return inOrderString();
 	}
 
-	public String inOrderString() {
+	private String inOrderString() {
 		StringBuilder sb = new StringBuilder();
 		inOrder(sb, root);
 		return sb.toString();
@@ -60,7 +60,7 @@ public class BinarySearchTree {
 			inOrder(sb, node.right);
 	}
 
-	public boolean insert(Node node) {
+	private boolean insert(Node node) {
 		if (root == null) {
 			root = node;
 			return true;
@@ -93,7 +93,7 @@ public class BinarySearchTree {
 	 * 层序遍历二叉树
 	 * @return
 	 */
-	public String levelOrderString() {
+	private String levelOrderString() {
 		if(root == null) {
 			return "";
 		}
