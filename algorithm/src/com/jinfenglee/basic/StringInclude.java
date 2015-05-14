@@ -28,44 +28,10 @@ public class StringInclude {
 					break;
 				}
 			}
-
-			if (j == b.length)
+			
+			if (j == b.length) 
 				return true;
 		}
 		return false;
 	}
-
-	public static String compareDoubleString(String source, String target) {
-		// 分别获取两个字符串的长度，因为后面会用到
-		int sourceLength = source.length();
-		int targetLength = target.length();
-		// 获取目标的第一个字符
-		char firstTargetChar = target.charAt(0);
-		// 最多比较的次数
-		int max = sourceLength - targetLength;
-
-		// 如果第一个不相等，那么一直找到相等的那一个或者找完都不能找到
-		int sourceOffset = -1;
-		while (++sourceOffset < max
-				&& source.charAt(sourceOffset) != firstTargetChar) {
-		}
-		if (sourceOffset <= max) {
-			// 设置新的源索引
-			int newSourceOffset = sourceOffset + 1;
-			// 剩余的比较长度，也就是在offset上增加targetLength
-			int leaveLength = newSourceOffset + targetLength - 1;
-			int targetOffset = 1;
-
-			// 连续的比较，条件不符合的时候跳出
-			for (; newSourceOffset < leaveLength
-					&& source.charAt(newSourceOffset) == target
-							.charAt(targetOffset); newSourceOffset++, targetOffset++)
-				;
-			if (newSourceOffset == leaveLength) {
-				return "包含：" + source + "包含" + target + "字符串!";
-			}
-		}
-		return "不包含：" + source + "不包含" + target + "字符串!";
-	}
-
 }

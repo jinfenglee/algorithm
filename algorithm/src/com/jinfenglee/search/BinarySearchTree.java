@@ -41,7 +41,7 @@ public class BinarySearchTree {
 		return inOrderString();
 	}
 
-	private String inOrderString() {
+	public String inOrderString() {
 		StringBuilder sb = new StringBuilder();
 		inOrder(sb, root);
 		return sb.toString();
@@ -93,7 +93,7 @@ public class BinarySearchTree {
 	 * 层序遍历二叉树
 	 * @return
 	 */
-	private String levelOrderString() {
+	public String levelOrderString() {
 		if(root == null) {
 			return "";
 		}
