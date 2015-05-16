@@ -24,51 +24,53 @@ public class QueueImplementByTwoStack {
 	public static void main(String[] args) {
 		QueueImplementByTwoStack queue = new QueueImplementByTwoStack();
 		List<Integer> result = new ArrayList<Integer>();
-		queue.push(1);
-		queue.push(6);
-		queue.push(3);
-		result.add(queue.poll());
-		queue.push(4);
-		result.add(queue.poll());
-		queue.push(5);
-		result.add(queue.poll());
-		result.add(queue.poll());
-		result.add(queue.poll());
+		queue.enQueue(9);
+		queue.enQueue(8);
+		queue.enQueue(7);
+		result.add(queue.deQueue());
+		queue.enQueue(4);
+		result.add(queue.deQueue());
+		queue.enQueue(5);
+		result.add(queue.deQueue());
+		result.add(queue.deQueue());
+		result.add(queue.deQueue());
 		System.out.println(result.toString());
 	}
 
 	/**
 	 * 出队
+	 * 把stack1 作为存储空间， stack2作为缓冲区.
 	 * @return
 	 */
-	public Integer poll() {
-		Integer re = null;
+	public Integer deQueue() {
+		Integer result = null;
+		// 两个栈都为空进行的特殊处理
 		if (stack1.isEmpty() && stack2.isEmpty()) {
 			return null;
 		}
 
 		if (!stack2.empty()) {
-			re = stack2.pop();
+			result = stack2.pop();
 		} else {
 			// move to stack2 to make stack1 have only one element.Then pop this element.
 			while (!stack1.empty()) {
-				re = stack1.pop();
-				stack2.push(re);
+				result = stack1.pop();
+				stack2.push(result);
 			}
 			if (!stack2.empty()) {
-				re = stack2.pop();
+				result = stack2.pop();
 			}
 		}
-		return re;
+		return result;
 	}
 	
 	/**
-	 * 入队
-	 * @param o
+	 * 入队    O(1)
+	 * @param element
 	 * @return
 	 */
-	public Integer push(int o) {
-		stack1.push(o);
-		return o;
+	public Integer enQueue(int element) {
+		stack1.push(element);
+		return element;
 	}
 }
