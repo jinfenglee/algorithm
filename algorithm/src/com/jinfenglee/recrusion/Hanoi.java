@@ -1,4 +1,4 @@
-package com.jinfenglee.basic;
+package com.jinfenglee.recrusion;
 /**
  * 汉诺塔（经典的递归算法） reCrusion <br/>
  * 该算法结论：当有n个盘子的时候，移动的次数为2^n -1.
