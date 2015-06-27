@@ -6,6 +6,7 @@ my algorithm study. include sort, search, dynamic programming etc
 |编程之美|[地址][1]|PB中的一些算法学习|
 |leetcode|[地址][2]|leetcode 中的一些算法|
 |排序|[地址][3]|排序相关的算法（比较基本的）|
+|查找|[地址][4]|二分，二叉查找|
 
 
 
@@ -20,3 +21,4 @@ my algorithm study. include sort, search, dynamic programming etc
 [1]: https://github.com/jinfenglee/algorithm/tree/master/algorithm/src/com/jinfenglee/programmingbeauty
 [2]:https://github.com/jinfenglee/algorithm/tree/master/algorithm/src/com/jinfenglee/leetcode
 [3]:https://github.com/jinfenglee/algorithm/tree/master/algorithm/src/com/jinfenglee/sort
+[4]:https://github.com/jinfenglee/algorithm/tree/master/algorithm/src/com/jinfenglee/search
