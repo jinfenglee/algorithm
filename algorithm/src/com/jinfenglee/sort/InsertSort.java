@@ -3,9 +3,9 @@ package com.jinfenglee.sort;
 import java.util.Arrays;
 
 /**
- * TODO：直接插入排序
+ * InsertSort
  * 
- * @author LJF (lijinfeng.ljf@gmail.com)
+ * @author LJF
  * @date 2014-08-13 23:28:55
  */
 public class InsertSort {
@@ -17,8 +17,8 @@ public class InsertSort {
 	}
 
 	/**
-	 * 插入排序 时间复杂度 :O(n^2),最好为O(n); 空间复杂度：O(1). 稳定
-	 * 
+	 * 直接插入排序
+	 * 时间复杂度 :O(n^2),最好为O(n); 空间复杂度：O(1). 稳定
 	 * @param arr
 	 */
 	public static void insertSort(int[] arr) {

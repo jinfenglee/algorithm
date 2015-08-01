@@ -3,7 +3,7 @@ package com.jinfenglee.basic;
  * 
  * @author LJF
  * @version 1.0  2013-12-26 13:44:53
- * ²éÕÒ1~n Ö®¼äµÄËùÓĞÖÊÊı
+ * æŸ¥æ‰¾1~n ä¹‹é—´çš„æ‰€æœ‰è´¨æ•°
  *
  */
 public class FindPrime {
@@ -14,7 +14,7 @@ public class FindPrime {
 			}
 		}*/
 		
-		// Ë¼Â·£º°ÑËùÓĞµÄºÏÊıÈ¥µôºóÁôÏÂÖÊÊı£¬ Õâ¸öË¼Â·Ïà¶ÔÀ´Ëµ±È½ÏºÃÒ»Ğ©...
+		// æ€è·¯ï¼šæŠŠæ‰€æœ‰çš„åˆæ•°å»æ‰åç•™ä¸‹è´¨æ•°ï¼Œ è¿™ä¸ªæ€è·¯ç›¸å¯¹æ¥è¯´æ¯”è¾ƒå¥½ä¸€äº›...
 		int n = 30;
 		int[] array = new int[n];
 		for (int i = 2; i < 30; i++) {
@@ -32,10 +32,9 @@ public class FindPrime {
 				System.out.print(" "+array[i]);
 			}
 		}
-		
 	}
 
-	// method1 ºÜ³£¹æµÄ×ö·¨  Ğ§ÂÊºÜµÍ ¼ÓÉÏmainÖĞ  ¸´ÔÓ¶È O(n^2)
+	// method1 å¾ˆå¸¸è§„çš„åšæ³•  æ•ˆç‡å¾ˆä½ åŠ ä¸Šmainä¸­  å¤æ‚åº¦ O(n^2)
 /*	private static boolean isPrime(int num) {
 		for (int i = 2; i <= Math.sqrt(num); i++) {
 			if(num % i ==0) {

@@ -1,11 +1,11 @@
 package com.jinfenglee.dynamaicprogram;
 
 /**
- * ¶¯Ì¬¹æ»®µÄÒ»¸ö¼òµ¥Àý×Ó£º
- * Ò»¸öÊýNµ½1 µÄ×îÉÙ²½Öè£¬Èç¹ûÊÇ 3µÄ±¶Êý³ýÒÔ3£¬·ñÔò¿ÉÒÔ¼Ó2»òÕß¼õ 1¡£ 
- * ÀýÈç 7: 7-1=6£» 6/3=2£» 2-1=1£»
+ * åŠ¨æ€è§„åˆ’çš„ä¸€ä¸ªç®€å•ä¾‹å­ï¼š
+ * ä¸€ä¸ªæ•°Nåˆ°1 çš„æœ€å°‘æ­¥éª¤ï¼Œå¦‚æžœæ˜¯ 3çš„å€æ•°é™¤ä»¥3ï¼Œå¦åˆ™å¯ä»¥åŠ 2æˆ–è€…å‡ 1ã€‚ 
+ * ä¾‹å¦‚ 7: 7-1=6ï¼› 6/3=2ï¼› 2-1=1ï¼›
  * 
- * »¹ÓÐÌÔ±¦µÄÒ»µÀÌâ£¨²Î¿¼£©£º
+ * è¿˜æœ‰æ·˜å®çš„ä¸€é“é¢˜ï¼ˆå‚è€ƒï¼‰ï¼š
  * http://zhiqiang.org/blog/science/computer-science/complexity-of-recursive-algorithm.html
  * @author LJF
  * 

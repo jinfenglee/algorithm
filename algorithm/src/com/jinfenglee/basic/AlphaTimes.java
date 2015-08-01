@@ -46,7 +46,7 @@ public class AlphaTimes {
             	 System.out.println(c+ " appear times:" + a[i] + " ");
             }
         }
-    }
+    }///
     
     /**
      * Summary:

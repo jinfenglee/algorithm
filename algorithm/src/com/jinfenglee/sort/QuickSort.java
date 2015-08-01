@@ -6,7 +6,6 @@ package com.jinfenglee.sort;
  * 
  * @author LJF
  * @date 2014-08-16 23:35:48
- * 
  */
 public class QuickSort {
 	public void quickSort(String strDate[], int left, int right) {
