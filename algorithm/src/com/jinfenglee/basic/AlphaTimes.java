@@ -39,7 +39,7 @@ public class AlphaTimes {
 	 * @param a
 	 */
     private static void print(int[] a) {
-    	System.out.println("大小写不区分出现次数如下：");
+    	System.out.println("大小写不区分各字母出现次数如下：");
         for (int i = 0; i < a.length; i++) {
             char c = (char) ('A' + i);
             if(a[i] != 0) {
