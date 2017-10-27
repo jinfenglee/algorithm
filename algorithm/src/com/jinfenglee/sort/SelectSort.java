@@ -12,7 +12,7 @@ import java.util.Arrays;
  */
 public class SelectSort {
 	public static void main(String[] args) {
-		int arr[] = { 5, 2, 4, 6, 1, 3 };
+		int arr[] = { 5, 2, 9, 6, 1, 3, 6 };
 		System.out.println("排序前:" + Arrays.toString(arr));
 		selectSort(arr);
 		System.out.println("排序后:" + Arrays.toString(arr));
@@ -34,14 +34,23 @@ public class SelectSort {
 					smallest = j;
 				}
 			}
-			exchange(arr, i, smallest);
+			
+			if(smallest != i) {   // 省得进行相同的元素再交换
+				swap(arr, i, smallest);
+			}
 		}
 	}
 
-	private static void exchange(int[] arr, int i, int j) {
-		int temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
+	/**
+	 * 交换数组中两个元素的值
+	 * @param arr
+	 * @param i
+	 * @param j
+	 */
+	private static void swap(int[] arr, int i, int j) {
+		arr[i] = arr[i] + arr[j];
+		arr[j] = arr[i] - arr[j];
+		arr[i] = arr[i] - arr[j];
 	}
 
 }

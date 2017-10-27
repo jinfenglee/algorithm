@@ -18,14 +18,11 @@ public class _2_13_02_SubArrayMaxMultiply {
 	/**
 	 * 数组中连续元素乘积的最大值
 	 * 
-	 * @param a
-	 *            数组
-	 * @param n
-	 *            数组长度
+	 * @param a 数组
+	 * @param n  数组长度
 	 * @return result 最大乘积
 	 */
 	private static int maxResult(int[] a, int n) {
-
 		int maxProduct = 1;
 		int minProduct = 1;
 		int result = 1;
@@ -49,7 +46,6 @@ public class _2_13_02_SubArrayMaxMultiply {
 			result = Math.max(result, maxProduct);
 			
 //			result = Math.min(result, minProduct);  // 连续子段乘积的最小值.
-			
 		}
 		return result;
 	}

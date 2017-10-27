@@ -1,4 +1,4 @@
-package com.jinfenglee.basic;
+package com.jinfenglee.array;
 
 import java.util.Arrays;
 

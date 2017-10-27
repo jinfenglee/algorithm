@@ -24,7 +24,7 @@ public class SearchInsertPosition {
 	 * @param target 
 	 * @return
 	 */
-	static int searchInsert(int A[], int target) {
+	private static int searchInsert(int A[], int target) {
 		if (null == A || A.length ==0) {
 			return 0;
 		}
@@ -44,6 +44,7 @@ public class SearchInsertPosition {
 		}
 		return left;
 	}
+	
 	// 在结束的时候，如果没有找到Target，那么left指向小于target的最大的数，right指向大于target的最小的数。
 
 }

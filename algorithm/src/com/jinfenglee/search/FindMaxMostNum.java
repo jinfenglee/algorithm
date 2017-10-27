@@ -27,7 +27,6 @@ public class FindMaxMostNum {
 				map.put(num[i], 1); // 记出现1次
 			}			
 		}
-
 		for (Entry<Integer, Integer> entry : map.entrySet()) {
 			Integer key = entry.getKey();
 			Integer value = entry.getValue();
@@ -42,8 +41,7 @@ public class FindMaxMostNum {
 			}
 		}
 	
-		System.out.println("出现次数最多且数值最大的数:" + maxKey + "\n" + "出现的次数:" + maxValue
-				+ "次");
+		System.out.println("出现次数最多且数值最大的数: " + maxKey + "\n" + "出现的次数: " + maxValue);
 
 	}
 }

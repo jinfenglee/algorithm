@@ -21,9 +21,8 @@ public class MergeSortedArray {
 	 * @param n B数组的长度
 	 */
 	public static void merge(int A[], int m, int B[], int n) {
-//		A = new int[m + n];
 		if (B.length == 0) {
-			System.out.println(A);
+//			System.out.println(A);
 			return;
 		}
 			

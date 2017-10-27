@@ -55,6 +55,7 @@ public class DivideNumArray {
 	
 	public static void main(String[] args) {
 		int a[] = { 2, 3, -2, 4, 5, -3, -1, -5 };
+		System.out.println("----- before sort:------");
 		int len = a.length;
 		int i;
 		for (i = 0; i < len; i++) {
