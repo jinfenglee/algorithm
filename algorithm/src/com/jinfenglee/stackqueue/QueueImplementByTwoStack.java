@@ -19,6 +19,7 @@ public class QueueImplementByTwoStack {
 	public QueueImplementByTwoStack() {
 		stack1 = new Stack<Integer>();
 		stack2 = new Stack<Integer>();
+		
 	}
 
 	public static void main(String[] args) {
@@ -34,6 +35,7 @@ public class QueueImplementByTwoStack {
 		result.add(queue.deQueue());
 		result.add(queue.deQueue());
 		result.add(queue.deQueue());
+		
 		System.out.println(result.toString());
 	}
 
@@ -42,7 +44,7 @@ public class QueueImplementByTwoStack {
 	 * 把stack1 作为存储空间， stack2作为缓冲区.
 	 * @return
 	 */
-	public Integer deQueue() {
+	private Integer deQueue() {
 		Integer result = null;
 		// 两个栈都为空进行的特殊处理
 		if (stack1.isEmpty() && stack2.isEmpty()) {
@@ -52,11 +54,12 @@ public class QueueImplementByTwoStack {
 		if (!stack2.empty()) {
 			result = stack2.pop();
 		} else {
-			// move to stack2 to make stack1 have only one element.Then pop this element.
+			// move to stack2 to make stack1 have only one element. Then pop this element.
 			while (!stack1.empty()) {
 				result = stack1.pop();
 				stack2.push(result);
 			}
+			
 			if (!stack2.empty()) {
 				result = stack2.pop();
 			}
@@ -69,8 +72,8 @@ public class QueueImplementByTwoStack {
 	 * @param element
 	 * @return
 	 */
-	public Integer enQueue(int element) {
+	private void enQueue(int element) {
 		stack1.push(element);
-		return element;
+//		return element;
 	}
 }

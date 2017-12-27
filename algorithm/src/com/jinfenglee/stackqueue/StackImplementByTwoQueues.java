@@ -26,6 +26,7 @@ public class StackImplementByTwoQueues {
 		if (queue1.size() == 0 && queue2.size() == 0) {
 			return null;
 		}
+		
 		if (queue2.size() == 0) {
 			while (queue1.size() > 0) {
 				result = queue1.removeFirst();
@@ -49,7 +50,7 @@ public class StackImplementByTwoQueues {
 	 * @param o
 	 * @return
 	 */
-	public Integer push(Integer o) {
+	public void push(Integer o) {
 		if (queue1.size() == 0 && queue2.size() == 0) {
 			queue1.addLast(o);  //  或者 queue2.addLast(o); 
 		}
@@ -58,7 +59,7 @@ public class StackImplementByTwoQueues {
 		} else if (queue2.size() != 0) {
 			queue2.addLast(o);
 		}
-		return o;
+//		return o;
 	}
 
 	public static void main(String[] args) {

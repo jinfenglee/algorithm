@@ -47,7 +47,6 @@ public class _3_01_1_StrShiftInclude {
 
 		String s1 = "AABCD";
 		String s2 = "CDAA";
-
 		_3_01_1_StrShiftInclude include = new _3_01_1_StrShiftInclude(s1);
 
 		if (include.doMatch(s2) == _3_01_1_StrShiftInclude.MATCH) {

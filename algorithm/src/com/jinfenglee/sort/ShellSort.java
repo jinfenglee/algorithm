@@ -1,7 +1,7 @@
 package com.jinfenglee.sort;
 
 /**
- * shellsort是在插入排序基础上的优化，主要是减少比较次数
+ * ShellSort是在插入排序基础上的优化，主要是减少比较次数
  * 
  * @author LJF
  * 

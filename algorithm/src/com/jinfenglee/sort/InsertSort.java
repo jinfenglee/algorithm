@@ -3,7 +3,7 @@ package com.jinfenglee.sort;
 import java.util.Arrays;
 
 /**
- * InsertSort
+ * InsertSort 直接插入排序
  * 
  * @author LJF
  * @date 2014-08-13 23:28:55
@@ -17,7 +17,7 @@ public class InsertSort {
 	}
 
 	/**
-	 * 直接插入排序
+	 * 
 	 * 时间复杂度 :O(n^2),最好为O(n); 空间复杂度：O(1). 稳定
 	 * @param arr
 	 */

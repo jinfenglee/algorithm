@@ -7,20 +7,20 @@ package com.jinfenglee.programmingbeauty;
  * 
  * Q2、求N!的二进制表示中最低位1的位置；(从后往前数，出现的1，位置序号从0开始.)
  * 
- * @author Administrator
- * @Date 2014-03-31
+ * @author li.jf
  * 
  */
 public class _2_02_Factorial {
 	public static void main(String[] args) {
 		int n = 4;
-		System.out.println(bottomZeroNum(n));
-		System.out.println(bottomZeroNum2(n));
+		System.out.println(bottomZeroNum(100));   // 100!  最后0的个数为  24     5*5，5*5*2, 5*5*3， 5*5*4  
+		System.out.println(bottomZeroNum2(10));
 		System.out.println("---------------");
-		System.out.println(Integer.toBinaryString(720));
+		System.out.println("720的二进制表示为：" + Integer.toBinaryString(720));
 		System.out.println(lowestOne(6));
 		System.out.println(totalNumZero(7));
-		
+//		System.out.println(t);
+		System.out.println(Integer.toBinaryString(5040));
 	}
 	
 	private static int bottomZeroNum(int n) {
@@ -85,10 +85,13 @@ public class _2_02_Factorial {
 		for (int i = 1; i <= n; i++) {
 			temp *= i;
 		}
-		/*while (temp != 0) {
-			num += temp & 0x01;
-			temp >>= 1;
-		}*/
+		
+		System.out.println("--- " + temp);
+		
+//		while (temp != 0) {
+//			num += temp & 0x01;
+//			temp >>= 1;
+//		}
 		
 		while (temp != 0) {
 			if (0 == temp % 2) {

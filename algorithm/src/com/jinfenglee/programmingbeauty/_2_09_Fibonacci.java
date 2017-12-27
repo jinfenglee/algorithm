@@ -10,13 +10,13 @@
 public class _2_09_Fibonacci {
 	public static void main(String[] args) {
 		int x = 44;
-		System.out.println(Fibonacci1(x));
+		System.out.println(Fibonacci1(43));
 		System.out.println(Fibonacci2(x));
 		System.out.println(Fibonacci3(x));
 	}
 
 	// 递归实现，当n比较大的时候开销会很大,不建议这样使用.	
-	private static int Fibonacci1(int n) {
+	private static long Fibonacci1(int n) {
 		if (n <= 0)
 			return 0;
 		else if (n == 1)
@@ -66,7 +66,6 @@ public class _2_09_Fibonacci {
 			temp = f0;
 			f0 = f1;
 			f1 += temp;
-
 		}
 		return f1;
 	}
