@@ -19,7 +19,7 @@ public class MaxAscSequence {
 	 * @param arr
 	 * @return int 最大递增序列的长度
 	 */
-	public static int maxSquenceLength(int[] arr) {
+	public static int maxSquenceLength(int[] arr) {  
 		int[] sequenceArr = new int[arr.length];
 		for (int i = 0; i < arr.length; i++) {
 			// 初始化每个递增序列的值都为1
