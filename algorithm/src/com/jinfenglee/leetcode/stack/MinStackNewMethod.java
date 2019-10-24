@@ -5,7 +5,7 @@ import java.util.Stack;
 public class MinStackNewMethod {
 
 	long min;
-	Stack<Long> stack;// 有减法，所以用long，将数据越界考虑在内
+	Stack<Long> stack;// 有减法，所以用long，将数据越界考虑在内   test
 
 	public MinStackNewMethod(){
 	        stack=new Stack<Long>();
